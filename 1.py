@@ -1,0 +1,17 @@
+korean = []
+english = []
+math = []
+score = input ("국어 : ")
+korean.append(score)
+
+score = input ("영어 : ")
+english.append(score)
+
+score = input ("수학 : ")
+math.append(score)
+
+# 배열[-1]은 맨 마지막 원소를 나타낸다.
+sum = int(korean[-1])+int(english[-1])+int(math[-1])
+avg = sum/3
+
+print("총점 : ",sum,", 평균 : ",round(avg,2)) #round를 이용해 소수둘째자리까지 출력
